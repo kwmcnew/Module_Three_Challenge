@@ -66,11 +66,11 @@ output_path = 'Module_Three_Challenge/PyBank/Analysis/Analysis_Results.txt'
 with open(output_path, 'w') as file:
     file.write("Financial Analysis\n")
     file.write("-------------------------\n")
-    file.write("Total Months: 86\n")
-    file.write("Total: $22564198\n")
-    file.write("Average Change: $-8311.11\n")
-    file.write("Greatest Increase in Profits: Aug-16 ($1862002)\n")
-    file.write("Greatest Decrease in Profits: Feb-14 ($-1825558)\n")
+    file.write("Total Months: " + str(total_months) + "\n")
+    file.write("Total: " + "$" + str(net_total) + "\n")
+    file.write("Average Change: " + "$" + format(average_change, ".2f") + "\n")
+    file.write("Greatest Increase in Profits: " + greatest_increase_date + " ($" + str(greatest_increase) + ")" + "\n")
+    file.write("Greatest Decrease in Profits: " + greatest_decrease_date + " ($" + str(greatest_decrease) + ")" + "\n")
 
 
 
