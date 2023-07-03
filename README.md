@@ -3,7 +3,7 @@
 # For the PyBank script, I had a session with a tutor and he suggested that I set up empty lists for "dates" and "profits_losses" before running a for loop, and then use the for loop to fill the lists:
 dates = []
 profits_losses = []
- # Read each row of data after the header
+
     for row in csvreader:
 
         # fill the empty lists
